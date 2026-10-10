@@ -36,9 +36,9 @@
         name it "model.glb", place it in an "assets" folder next to index.html,
         then uncomment the line below and swap the placeholder <a-box>/<a-text>
         further down for: <a-gltf-model src="#augmiumModel" position="0 0 0" scale="0.1 0.1 0.1"></a-gltf-model>
-
+        -->
         <a-asset-item id="augmiumModel" src="./assets/model.glb"></a-asset-item>
-      -->
+    
     </a-assets>
 
     <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
@@ -47,21 +47,7 @@
     <a-entity mindar-image-target="targetIndex: 0">
 
       <!-- Placeholder geometry: swap this out for your real 3D asset later -->
-      <a-box
-        position="0 0.25 0"
-        rotation="0 45 0"
-        scale="0.3 0.3 0.3"
-        color="#C9A24B"
-        animation="property: rotation; to: 0 405 0; loop: true; dur: 4000; easing: linear"
-      ></a-box>
-
-      <a-text
-        value="AUGMIUM"
-        align="center"
-        position="0 -0.15 0"
-        scale="0.7 0.7 0.7"
-        color="#F4EFE6"
-      ></a-text>
+      <a-gltf-model src="#augmiumModel" position="0 0 0" rotation="0 0 0" scale="1 1 1"></a-gltf-model>
 
     </a-entity>
   </a-scene>
